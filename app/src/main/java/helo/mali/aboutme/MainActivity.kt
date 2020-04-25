@@ -14,10 +14,13 @@ import helo.mali.aboutme.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityMainBinding
+    val myName = MyName("Xhemajl Prekorogja", "mali")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+        binding.myName = myName
 
         binding.doneButton.setOnClickListener {
             bakeNickName()
@@ -27,7 +30,7 @@ class MainActivity : AppCompatActivity() {
     private fun bakeNickName() {
 
         binding.apply {
-            nickNameTextView.text = nickNameEditText.text
+            myName?.nickname = nickNameEditText.text.toString()
             invalidateAll()
             nickNameTextView.visibility = View.VISIBLE
 
