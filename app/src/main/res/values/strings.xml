@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">About me</string>
     <string name="name">Xhemajl Prekorogja</string>
+    <string name="yellow_star">yellow star</string>
+    <string name="bio">I am an Android Developer with a passion to build useful and likeable apps.
+\nI recently worked on an app that allows authors to create, review, and sell tests.
+\nAlways looking to further improve my skills in app design and implementation.
+\n\nSkills: Java, Spring, SQL, Object-oriented programming, Design Patterns, Gradle, jOOQ </string>
 </resources>
